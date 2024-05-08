@@ -25,7 +25,6 @@ subAccount = [
     "CCM = 16748",
     "CECH = 16751",
     "CEAS = 16752",
-    "Social Work = 16759",
     "CoB = 16757",
     "DAAP = 16750",
     "Law = 16763",
