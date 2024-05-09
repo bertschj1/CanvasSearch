@@ -7,7 +7,7 @@ import MyToken
 # secret token is called by a separate file (MyToken.py)
 # Canvas API key
 
-API_URL = "https://uc.instructure.com"
+API_URL = MyToken.institution
 API_KEY = MyToken.secret
 
 # Initialize a new Canvas object

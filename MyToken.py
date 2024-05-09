@@ -1,1 +1,3 @@
 secret = "ENTER YOUR SECRET TOKEN"
+
+institution = "ENTER YOUR INSTITUTION'S URL"
