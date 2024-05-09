@@ -15,12 +15,6 @@ canvas = Canvas(API_URL, API_KEY)
 
 ###### Code that begins Canvas provisioning report
 
-#prints out term IDs
-tID = canvas.get_account(1939)
-term = tID.get_enrollment_terms()
-for id in term:
-    print(id)
-
 subAccount = [
     "CCM = 16748",
     "CECH = 16751",
@@ -36,6 +30,7 @@ subAccount = [
     "Clermont = 16747",
     "Allied Health = 16749",
     "ELCE = 16756"
+    "UC Online = 17337"
     ]
 for school in subAccount:
     print(school)
@@ -46,6 +41,13 @@ account = canvas.get_account(collegeCode)
 print()
 print("You selected: " + str(account))
 print()
+
+
+#prints out term IDs
+tID = canvas.get_account(1939)
+term = tID.get_enrollment_terms()
+for id in term:
+    print(id)
 
 termCode = input("Enter the term code you want to search: ")
 courses = account.get_courses(enrollment_term_id=termCode)
